@@ -1,0 +1,87 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external}
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix}
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble}
+
+
+\name{周伟林}
+\basicInfo{
+  \email{izhouwl@163.com} \textperiodcentered\ 
+  \phone{(+86) 176-0053-5912} \textperiodcentered\ 
+  \homepage[zhouweilin.cn]{https://zhouweilin.cn/}}
+
+
+% 教育背景
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京邮电大学\quad}{ 网络技术研究院\quad }{ 计算机科学技术\quad }{ 硕士 }}{2016年09月 -- 2019年06月}
+\datedsubsection{\textbf{北京工业大学\quad}{ 计算机学院\quad\quad\quad }{ 信息安全\quad\quad\quad\quad }{ 本科 }}{2012年09月 -- 2016年06月}
+
+
+% 实习经历
+\section{\faBriefcase\ 实习经历}
+\datedsubsection{\textbf{滴滴出行\quad\quad\quad\quad} \textbf{质量技术部\quad\quad\quad}{ web前端研发}}{2018年06月 -- 2018年08月}
+\begin{itemize}
+  \item 参与“月光宝盒”项目，通过重放订单流量，实现场景还原。
+  \item 项目前端部分，使用本地化mock + require.js + simplite + less + gulp技术栈。
+  \item 我负责1）api调用跟踪、任务报表、任务差异等十余个页面；2）table表头冻结、单击表项跳转到对应task、表项过滤等feature；3）与后台联调接口。
+  \item 熟悉了前端工程化开发，锻炼了排错能力和团队协作的能力。
+\end{itemize}
+\datedsubsection{\textbf{西门子中国\quad\quad\quad} \textbf{新闻传播部\quad\quad\quad}{网站技术支持}}{2017年10月 -- 2018年03月}
+\begin{itemize}
+  \item 参与了CMS迁移项目，公司要把对外网站的内容从SharePoint迁移到AEM系统上。
+  \item 我负责1）修改和维护新页面布局，制作Slider、Dialog组件并嵌入到ASP.NET页面内；2）编写一些JS脚本展示页面信息及分析数据，如location.referrer区分流量来源。
+  \item 锻炼了外语沟通能力，了解了成熟的大型网站运作与运维模式。
+\end{itemize}
+
+
+% 项目经历
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{H5移动端小游戏\quad\quad\quad}{别踩白块儿}}{2018年02月}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item web版的别踩白块儿小游戏，实现自动加速、记录分数、调整难度等级等功能。
+  \item 使用canvas绘图，以MVC设计模式组织代码。采用响应式布局，并对移动端事件适配。白块儿移动有平滑的过渡效果。
+  \item 丰富了自己移动端的开发经验。
+\end{itemize}
+\end{onehalfspacing}
+\datedsubsection{\textbf{SVNF\quad\quad\quad\quad\quad\quad\quad\quad}{网络算法设计与实现}}{2018年07月 -- 08月}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 经过调研发现，在VNFaaS部署到数据中心拓扑的过程中，VS(Vertical Scalability)、FPL(Flow Path Length)、SU(Server Utility)三者不能同时做到。
+  \item 本人提出并实现了SVNF的启发式VNF放置方案，保证扩展性的前提下，尽力提高FPL和SU。
+  \item 与RNDP和CLBP方案进行比较，本方案比RNDP方案的FPL缩短了3-4倍，其他两者则接近；在流量增长的情境下，比CLBP方案丢包率下降了近一倍，其他两方面与CLBP接近。
+  \item 锻炼了研究性思维，加深了对NFV、TE、启发式算法的理解。
+\end{itemize}
+\end{onehalfspacing}
+
+
+% 专业技能
+\section{\faCogs\ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 熟悉NFV、HTTP(S)、TCP/IP、DNS，了解CDN、TE、路由、云计算
+  \item 熟悉HTML5、CSS3、JavaScript、Bootstrap、jQuery，了解Canvas
+  \item 熟悉Git、Emmet、ESlint、MS Office、Markdown、LaTex等工具的使用
+  \item 熟悉python 3，了解node.js
+  \item 无障碍阅读英文技术文档，CET-6
+\end{itemize}
+
+
+% 个人荣誉
+\section{\faHeartO\ 个人荣誉}
+\datedline{\textbf{学术论文}}
+{周伟林, 杨芫, 徐明伟. 网络功能虚拟化技术研究综述[J]. 计算机研究与发展, 2018, 55(4): 675-688.}
+\datedline{\textbf{竞赛获奖}}
+{2015 思科网院杯 CCNA 赛项本科组，全国二等奖，全国排名 12/168}
+
+\end{document}
