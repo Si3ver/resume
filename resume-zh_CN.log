@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.6.25)  20 AUG 2018 23:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.6.25)  20 AUG 2018 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1440,15 +1440,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./resume-zh_CN.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
-
-
-Package rerunfilecheck Warning: File `resume-zh_CN.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume-zh_CN.out':
-(rerunfilecheck)             Before: F6855013B6D835D8BADC4CD6A2F8EE45
-(rerunfilecheck)             After:  2224CA766FC1E51413A7D11C1F9DB842.
+Package rerunfilecheck Info: File `resume-zh_CN.out' has not changed.
+(rerunfilecheck)             Checksum: 2224CA766FC1E51413A7D11C1F9DB842.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
