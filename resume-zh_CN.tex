@@ -1,10 +1,11 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8 Unicode
 % !Mode:: "TeX:UTF-8"
-\documentclass{resume}
+\documentclass[14pt]{resume}
 \usepackage{graphicx}
 \usepackage{tabu}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{progressbar}
 \usepackage{zh_CN-Adobefonts_external}
 \usepackage{linespacing_fix}
@@ -12,7 +13,6 @@
 
 \begin{document}
 \pagenumbering{gobble}
-
 % \name{周伟林}
 % \basicInfo{
 %   \homepage[zhouweilin.cn]{https://zhouweilin.cn/}\
@@ -22,63 +22,94 @@
 %   \email{izhouwl@163.com}\ 
 %   \phone{176-0053-5912}
 % }
+% \begin{multicols}{2}
+%     \Large{
+%         \begin{tabu}{ l l }
+%             \multirow{5}{1.15in}{
+%                 \includegraphics[width=0.88in]{avatar}
+%             }
+%             & \faBirthdayCake{1995.09.12} \\
+%             & \phone{(+86)17600535912} \\
+%             & \email{izhouwl@163.com} \\
+%             & \homepage[www.zhouweilin.cn]{https://zhouweilin.cn} \\
+%             & \github[github.com/Si3ver]{https://github.com/Si3ver} 
+%         \end{tabu}
+%     }
+%     \columnbreak
+%     \Large{
+%         \begin{tabu}{ l l }
+%             \multirow{5}{2.15in}{
+%                 \name{周伟林}
+%                 \basicInfo{
+%                     \faSmileO{意向职位：web前端研发}
+%                 }
+%             }
+%         \end{tabu}
+%     }
+% \end{multicols}
 
-\Large{
-  \begin{tabu}{ c  l  r }
-    \multirow{5}{1.15in}{
-       \includegraphics[width=0.88in]{avatar}
+\begin{multicols}{4}
+    \Large{
+        \begin{tabu}{ r }
+            \multirow{5}{1in}{
+                \includegraphics[width=0.88in]{avatar}
+            }
+        \end{tabu}
     }
-    & \scshape{周伟林（前端岗）}
-        & {JavaScript~}\progressbar{0.85} \\
-    & \email{izhouwl@163.com \quad\quad\quad} 
-        & {FEED~}\progressbar{0.7} \\
-    & \phone{(+86)17600535912} 
-        & {React~}\progressbar{0.7} \\
-    & \homepage[www.zhouweilin.cn]{https://zhouweilin.cn} 
-        & {python~}\progressbar{0.65} \\
-    & \github[github.com/Si3ver]{https://github.com/Si3ver} 
-        & {network~}\progressbar{0.9}
-  \end{tabu}
-}
-
-% 专业技能
-\section{\faCogs\ 其他技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 熟悉原生JS、ES6、Bootstrap、ECharts、AntD、jQuery、Matplotlib
-  \item 会使用Redux、Canvas、Webpack、LaTex
-  \item 英语能力，无障碍阅读英文文档，CET-6
-%   \item 熟悉HTML5、CSS3、JavaScript、Bootstrap、jQuery，eCharts，了解Canvas
-%   \item 熟悉Git、Emmet、ESlint、MS Office、Markdown、LaTex等工具的使用
-%   \item 熟悉python 3，了解node.js
-%   \item 无障碍阅读英文文档，CET-6
-\end{itemize}
+    \columnbreak
+    \Large{
+        \begin{tabu}{ l l }
+            & \faBirthdayCake{1995.09.12} \\
+            & \phone{(+86)17600535912} \\
+            & \email{izhouwl@163.com} \\
+            & \homepage[\textbf{\color{red}{www.zhouweilin.cn}}]{https://zhouweilin.cn} \\
+            & \github[github.com/Si3ver]{https://github.com/Si3ver} 
+        \end{tabu}
+    }
+    \columnbreak
+    \Large{
+        \begin{tabu}{ r }
+            \multirow{5}{3.5in}{
+                \name{周伟林}
+                \basicInfo{
+                    \faSmileO{意向职位：web前端研发}
+                }
+            }
+        \end{tabu}
+    }
+\end{multicols}
 
 % 教育背景
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{北京邮电大学(211)\quad}{ 网研院\quad\quad }{ 计算机科学技术\quad }{ 硕士 }}{2016年09月 -- 2019年06月}
-\datedsubsection{\textbf{北京工业大学(211)\quad}{ 计算机院\quad }{ 信息安全\quad\quad\quad\quad }{ 本科 }}{2012年09月 -- 2016年06月}
+\datedsubsection{\textbf{北京邮电大学(211)\quad\quad\quad}{ 计算机科学技术\quad\quad\quad }{ 硕士 }}{2016年09月 -- 2019年06月}
+\datedsubsection{\textbf{北京工业大学(211)\quad\quad\quad}{ 信息安全\quad\quad\quad\quad\quad\quad }{ 本科 }}{2012年09月 -- 2016年06月}
 
 % 实习经历
 \section{\faBriefcase\ 实习经历}
 \datedsubsection{\textbf{滴滴出行\quad\quad\quad\quad\quad} \textbf{质量技术部\quad\quad\quad}{ WEB前端研发}}{2018年06月 -- 2018年09月}
 \begin{itemize}
-  \item 参与月光宝盒项目和Omega项目用户反馈系统的页面开发。
-  \item 熟悉了webpack配置、数据管理、页面路由、ECharts绘图、接口联调、页面调试，锻炼了前端工程化开发能力。
-  \item 通过与产品经理沟通项目需求，上线测试平台，邀请项目组成员反馈并优化代码，提高页面的交互性。锻炼了团队合作能力和沟通能力。
+    \item[\faCheck] 参与月光宝盒(订单流量重放平台)和Omega(数据与产品质量检测管理平台)两个项目
+    \item[\faCheck] 使用轻量级\textbf{\color{red}{模板引擎simplite}}开发用户反馈系统、启动崩溃分析系统的多个页面
+    \item[\faCheck] 修改JSError和JSMonitor系统页面。增加表头冻结等feature，并重构代码
+    \item[\faCheck] 使用\textbf{\color{red}{ECharts}}进行数据可视化，为页面添加柱状图、饼图和折线图，实现丰富的交互效果
+    \item[\faCheck] 向后台索要接口数据格式，利用mock假数据，实现本地前后端分离开发
+    \item[\faCheck] 页面国际化，使网站支持中英文一键切换
+    \item[\faCheck] 成果：1. 页面上线到正式系统中，供公司内部使用 2. \textbf{\color{red}{重构代码}}后，减少了数据请求量
 \end{itemize}
 
 \datedsubsection{\textbf{西门子中国\quad\quad\quad\quad} \textbf{新闻传播部\quad\quad\quad}{网站技术支持}}{2017年10月 -- 2018年03月}
 \begin{itemize}
-  \item 参与了CMS迁移项目，把外网内容从古老的SharePoint迁移到AEM系统。
-  \item 我负责1）更新页面布局，开发Slider、Dialog组件并嵌入到asp页面；2）编写JS脚本分析页面信息及分析数据；3）统计网站埋点数据，分析网站UV、PV、转化率。
-  \item 锻炼了外语沟通能力，接触到大型网站的日常运维。
+  \item[\faCheck] 负责维护新的新闻发布平台AEM和旧平台SharePoint，以及旧系统到新系统的数据迁移
+  \item[\faCheck] 为不同页面添加样式，如4列多栏的视频布局
+  \item[\faCheck] 为asp页面开发公用组件，如Slider组件，利用iframe嵌入
+  \item[\faCheck] 获取网站埋点数据的统计结果，整理每月PV/UV报表。
+  \item[\faCheck] 收获：1. 邮件使用英文沟通，与老外口语交流，锻炼了英语听说读写 2. 接触到大型新闻发布系统的运维。
 \end{itemize}
 
 \datedsubsection{\textbf{北京江南天安科技\quad} \textbf{软件研发部\quad\quad\quad}{Windows程序开发}}{2015年07月 -- 2015年09月}
 \begin{itemize}
-  \item 负责1)参与云密码机的专用UKey初始化工具、双因子认证软件的windows开发部分；2)测试密码机指令、统计返回结果。
-  \item 主要收获包括，1)掌握了windows程序设计，熟练了VS的调试工具；2)加深了对安全通信和密码学的理解。
+  \item[\faCheck] 负责云密码机的专用UKey初始化工具和双因子认证软件的windows开发
+  \item[\faCheck] 收获：1. 掌握了windows程序设计和VS的调试 2. 加深了对安全通信和密码学的理解。
 \end{itemize}
 
 % % 项目经历
@@ -101,17 +132,25 @@
 % \end{itemize}
 % \end{onehalfspacing}
 
+% 技能树
+\section{\faCogs\ 技能树}
+
+\begin{itemize}
+  \item[\faCheck] 熟悉原生JavaScript、ES6，有\textbf{\color{red}{H5移动端小游戏}}开发经验
+  \item[\faCheck] 熟悉前后端分离、前端工程化，会配置Webpack，能使用Redux管理数据
+  \item[\faCheck] 熟悉常用工具/库，包括\textbf{\color{red}{React.js}}、Canvas、ECharts、Bootstrap、AntD、jQuery、
+  \item[\faCheck] 熟悉密码学、网络安全，理解\textbf{\color{red}{HTTPS}}，有思科ASA防火墙配置经验和网络安全协议开发经验
+  \item[\faCheck] 熟悉python可视化库Matplotlib、排版工具Markdown、LaTex
+  \item[\faCheck] 通过CET-6，无障碍阅读英文文档，熟练使用Google、Stack Overflow检索
+\end{itemize}
+
 
 % 个人荣誉
-\section{\faHeartO\ 个人荣誉}
-% \datedline{\textbf{学术论文\quad}}
+\section{\faHeartO\ 论文与竞赛}
 
-\trophy[Weilin Zhou, Yuan Yang, Mingwei Xu, “Accommodating dynamic traffic immediately: a VNF placement approach,” Orlando, USA, Nov. 2018.(IPCCC'18，SCI收录，CCF推荐会议，评审中)]{}
+\trophy[Weilin Zhou, Yuan Yang, Mingwei Xu, “Accommodating dynamic traffic immediately: a VNF placement approach,” Orlando, USA, Nov. 2018.(IPCCC'18，SCI，CCF推荐会议，评审中)]{https://github.com/Si3ver/SVNF}
 
-\trophy[周伟林, 杨芫, 徐明伟. 网络功能虚拟化技术研究综述. 计算机研究与发展, 2018, 55(4): 675-688. (国内计算机领域三大核心期刊之一，EI收录)]{}
-
-% \datedline{\textbf{竞赛获奖\quad}}
+\trophy[周伟林, 杨芫, 徐明伟. 网络功能虚拟化技术研究综述. 计算机研究与发展, 2018, 55(4): 675-688. (国内计算机领域三大核心期刊之一，EI)]{http://crad.ict.ac.cn/CN/abstract/abstract3662.shtml}
 
 \trophy[2015 思科网院杯(全国大学生网络竞赛) 本科组二等奖，全国排名第12]{http://www.catc.edu.cn/2015cup/news/19rr5gvqfnqk2.xhtml} 
-
 \end{document}

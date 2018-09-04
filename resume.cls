@@ -88,6 +88,7 @@
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
+\newcommand{\birthday}[1]{\faBirthdayCake\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 
@@ -120,3 +121,4 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
+
